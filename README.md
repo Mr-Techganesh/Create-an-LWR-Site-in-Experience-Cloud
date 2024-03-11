@@ -4,7 +4,9 @@
 The Hive Foundation focuses on community impact programs to help people experiencing poverty or homelessness. Their leadership are deeply troubled by the rise of adolescent mental health challenges and want to help communities respond. The first step in their plan is to build a tool that anyone in a community can use to contribute local resources, events, and support opportunities. Their vision is that these tools can be deployed in communities around the world to aggregate resources and help build more resilient and well-resourced communities.
 
 ## Business Requirements
-Your first step in helping the foundation is to complete the build of a screen flow. Eventually, this flow will live on the Hive Foundation’s website, but for now it will be used by internal staff. When it’s live, website visitors will be able to enter key information about a variety of community resources. You’ve already created a custom object called Resource to hold this information.
+Your first step in helping the foundation is to complete the build of a screen flow. Eventually, this flow will live on the Hive Foundation’s website, but for now it will be used by internal staff. When it’s live, website visitors will be able to enter key information about a variety of community resources.
+
+## Creating Flow in Flow Builder
 
 ### Screen 1: Resource Management
 You’ve done quite a bit of work in setting up the Resource Management flow and are looking forward to adding and modifying screens for users to input data. Begin by creating a welcome screen situated between the flow Start and the first Assignment element. Name the first screen Resource Management and add a description of your choosing.
