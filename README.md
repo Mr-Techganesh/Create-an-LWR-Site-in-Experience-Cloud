@@ -55,8 +55,6 @@ Lucky for us, we can add flows to our org's Experience Builder sites. Putting a 
 - Interest forms
 - Quote generators, such as for a car they're selling
 
-### Beyond the Basics
-If you don't use Experience Builder sites, there is another option, but it requires development skills. You, or your developer, can embed the `lightning:flow` component in your external app by using Lightning Out. The [Use Components Outside Salesforce with Lightning Out](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/lightning_out.htm) help article and [Lightning Web Component Flow component reference](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_flow) are great starting points.
 
 ## Experience Builder Pages
 One of the first tasks for creating an Experience Builder site is selecting the template. Each template comes with a specific set of Experience Builder pages. That said, all Experience Builder pages fall into one of these categories:
@@ -97,5 +95,6 @@ All done! Let's see how the flow works in a real live site.
 3. If you aren't logged in, under the login fields, click Are you an employee? Login here. If you need to enter the username and password for your Trailhead Playground, check out the Get Your Trailhead Playground Username and Password unit of the Trailhead Playground Management module, which shows you how to find them.
 
 That's it! Your flow is now live, and available to site users.
-![image](
+
+![Screenshot 2024-03-11 193149](https://github.com/Mr-Techganesh/Lightning-web-Runtime-LWR-Project/assets/117075085/06a6ef1f-5a88-4ec7-90e6-5211affbf23d)
 
