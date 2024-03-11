@@ -39,3 +39,63 @@ Replace the placeholder text with appropriate field values in the following elem
 Modify the Email component to restrict editing to the Email field.
 Configure two fields on the S3 Edit Resource Request screen to display default values from the Resource record the user is referencing. Update the default value of the Resource Title and Description input fields to display the value from that Resource record.
 
+# Display a Flow on a Page Outside Your Salesforce Org
+
+## Learning Objectives
+After completing this unit, you’ll be able to:
+- Describe use cases for displaying a flow outside your Salesforce org.
+- List the types of Experience Builder pages.
+- Create a new Experience Builder page and add a flow to it.
+
+For users logging into a Salesforce org, we've got lots of options: Lightning pages, flow actions, and the utility bar. But what if you want to open up access to the flow to folks without a Salesforce license?
+
+Lucky for us, we can add flows to our org's Experience Builder sites. Putting a flow on a site is just as easy as putting a flow on a Lightning page. Here are some examples of flows that are perfect for sites built on Experience Builder, whether the site is geared toward customers, partners, employees, or some other group altogether:
+- Surveys
+- Registration forms
+- Interest forms
+- Quote generators, such as for a car they're selling
+
+### Beyond the Basics
+If you don't use Experience Builder sites, there is another option, but it requires development skills. You, or your developer, can embed the `lightning:flow` component in your external app by using Lightning Out. The [Use Components Outside Salesforce with Lightning Out](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/lightning_out.htm) help article and [Lightning Web Component Flow component reference](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_flow) are great starting points.
+
+## Experience Builder Pages
+One of the first tasks for creating an Experience Builder site is selecting the template. Each template comes with a specific set of Experience Builder pages. That said, all Experience Builder pages fall into one of these categories:
+- My Pages: The standard pages that you create. (The object pages that you create appear under Objects.)
+- Template Pages: The default pages that come with the site template.
+- Objects: The pages of the objects in your site, which include the object’s record detail, list, and related list pages.
+- Generic Record Pages: These generic pages are used to display record information for a Salesforce object when custom object pages don’t exist.
+- Login Pages: The default login pages that come with the site template.
+
+## Add Your Flow to an Experience Builder Page
+It takes a lot of planning and know-how to set up a site for users. But if we don't have a site, we can't exactly show you how to add a flow to one. So let’s breeze through creating a site, and then add a flow. We’ve learned about elements and components used for building flows, but within Experience Builder, Flow is, itself, a component. Read on and you’ll see.
+
+1. Enable Digital Experiences for your Trailhead Playground. (If it's already enabled, skip ahead to step 2.)
+   a. From Setup, enter digital in the Quick Find box, then click Settings under Digital Experiences.
+   b. Click Enable Digital Experiences.
+   c. Enter a domain name, make sure it's available, and then save your changes.
+   
+2. Create a site.
+   a. You should have been redirected to the All Sites page in Setup. If not, or if you skipped step 1, enter Digital Experiences in the Quick Find box, and select All Sites.
+   b. Click New.
+   c. Select the Customer Service template, then click Get Started.
+   d. Enter a name for the site and click Create.
+
+3. Now that we've built a fresh site, let's add our flow to its home page.
+   a. From the My Workspaces page, click Builder to open Experience Builder.
+   b. In the top-left corner, click Components to open the Components pane.
+   c. Search for Flow to find the right component. Drag Flow onto the Experience Builder page.
+   d. Make sure that the component displays the right flow. In the properties pane for Flow, select Hello World.
+
+## Test Your Flow
+All done! Let's see how the flow works in a real live site.
+
+1. In the top-right corner of the Experience Builder, click Publish, and then Publish again. If this is the first time you're publishing this site, it'll take a few minutes. While you wait for the confirmation email, why not grab a cup of coffee?
+   - Normally, you'd preview the site before you publish it, but the Flow component doesn't display the flow in design or preview mode. That’s a fail-safe to prevent the flow from performing an action (like creating a bunch of records) before the first screen.
+
+2. In the “Site Published Successfully” confirmation email, click the link.
+
+3. If you aren't logged in, under the login fields, click Are you an employee? Login here. If you need to enter the username and password for your Trailhead Playground, check out the Get Your Trailhead Playground Username and Password unit of the Trailhead Playground Management module, which shows you how to find them.
+
+That's it! Your flow is now live, and available to site users.
+![image](
+
